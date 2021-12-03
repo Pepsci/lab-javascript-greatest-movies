@@ -46,7 +46,7 @@ function dramaMoviesScore(average) {
 
 
   let sum = 0;
-  let scores = average.map(av => av.score.genre.includes('Drama'))
+  let scores = average.map(av => av.score)
   for (let i = 0; i < scores.length; i++) {
      sum +=scores[i];
     
