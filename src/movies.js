@@ -29,8 +29,7 @@ function howManyMovies(nbrMovie) {
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(average) {
-if(average.length == " " ) return 0
-// if(average.score === undefined ) return 0
+if(average.length == " ") return 0;
   
 
   let sum = 0;
@@ -60,12 +59,11 @@ function dramaMoviesScore(averageDrama) {
 
 // dramaMoviesScore(movie);
 
-
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(order) {
 
   let orderingYear = order.sort((a, b) => Number(a.year) - Number(b.year))
-  
+
   return orderingYear
 }
 
@@ -73,13 +71,23 @@ function orderByYear(order) {
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(order) {
 
-  let alphabeticOrder = order.sort(movie.title)
 
-  return alphabeticOrder
+  let alphabeticOrder = order.sort((a, b) => a.title.localeCompare (b.title)).slice(0, 20)
+  
+  // console.log("------------");  
+  // console.log(alphabeticOrder);
+  // console.log("------------");  
+  // console.log(alphabeticOrder.length);
+
+  return alphabeticOrder 
 }
+// orderAlphabetically(movie)
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
-function turnHoursToMinutes() {}
+function turnHoursToMinutes() {
+
+  
+}
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
 function bestYearAvg() {}
