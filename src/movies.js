@@ -84,10 +84,17 @@ function orderAlphabetically(order) {
 // orderAlphabetically(movie)
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
-function turnHoursToMinutes() {
+function turnHoursToMinutes(convert) {
 
-  
+//   let hours = convert.filter(el => el.duration)
+
+//   let parts = hours.split('h');
+//   let minutes = Number(parts[0])*60+Number(parts[1]);
+// console.log(hours);
+//   return hours.duration
 }
+
+turnHoursToMinutes(movie)
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
 function bestYearAvg() {}
